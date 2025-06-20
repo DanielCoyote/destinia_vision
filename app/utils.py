@@ -57,7 +57,7 @@ def analizar_imagen(image_np):
     if not res.multi_face_landmarks:
         print("No se detectó ningún rostro.")
         # guarda la imagen para depuración
-        cv2.imwrite("debug_no_face.jpg", image_np)
+        #cv2.imwrite("debug_no_face.jpg", image_np)
 
         return {"error": "No se detectó ningún rostro."}
 
@@ -118,6 +118,6 @@ def analizar_imagen(image_np):
     print(f"el nivel de somnolenca es: {nivel}")
 
     # Guarda la imagen para depuración
-    cv2.imwrite("debug_result.jpg", image_np)
+    #cv2.imwrite("debug_result.jpg", image_np)
 
     return resultados

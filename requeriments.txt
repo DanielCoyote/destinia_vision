@@ -1,7 +1,8 @@
-fastapi
 uvicorn
+fastapi
 numpy
 opencv-python
-tensorflow
+tflite-runtime
 mediapipe
 python-multipart
+Pillow
