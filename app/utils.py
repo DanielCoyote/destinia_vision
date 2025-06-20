@@ -1,5 +1,5 @@
 import numpy as np
-import tensorflow as tf
+from tflite_runtime.interpreter import Interpreter
 import cv2
 import mediapipe as mp
 from time import time
@@ -7,7 +7,7 @@ from mediapipe.python.solutions.face_mesh import FACEMESH_LEFT_EYE, FACEMESH_RIG
 
 # ========== Cargar modelos ==========
 def load_tflite_model(path):
-    interp = tf.lite.Interpreter(model_path=path)
+    interp = Interpreter(model_path=path)
     interp.allocate_tensors()
     input_details = interp.get_input_details()[0]
     output_details = interp.get_output_details()[0]
