@@ -2,7 +2,7 @@ uvicorn
 fastapi
 numpy
 opencv-python-headless
-tensorflow==2.13.0
+tf-nightly
 mediapipe
 python-multipart
 Pillow
