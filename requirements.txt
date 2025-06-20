@@ -1,7 +1,7 @@
 uvicorn
 fastapi
 numpy
-opencv-python
+opencv-python-headless
 tflite-runtime
 mediapipe
 python-multipart
